@@ -1,0 +1,203 @@
+2023-03-27 22:33:44.822  INFO 2478 --- [restartedMain] c.n.h.HotelBookingApplication            : Starting HotelBookingApplication using Java 11.0.18 on SURAJs-MacBook-Air.local with PID 2478 (/Users/surajsachan/Desktop/Suraj_3175087_TravelPortal/hotel-booking/target/classes started by surajsachan in /Users/surajsachan/Desktop/Suraj_3175087_TravelPortal/hotel-booking)
+2023-03-27 22:33:44.826  INFO 2478 --- [restartedMain] c.n.h.HotelBookingApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-03-27 22:33:44.849  INFO 2478 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-27 22:33:44.849  INFO 2478 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-27 22:33:45.172  INFO 2478 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-27 22:33:45.264  INFO 2478 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 3 JPA repository interfaces.
+2023-03-27 22:33:45.379  INFO 2478 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=59f0f32e-efa1-36af-8392-a02c09557f7d
+2023-03-27 22:33:45.750  INFO 2478 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+2023-03-27 22:33:45.756  INFO 2478 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-27 22:33:45.757  INFO 2478 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-03-27 22:33:45.796  INFO 2478 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-27 22:33:45.796  INFO 2478 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 947 ms
+2023-03-27 22:33:45.813  INFO 2478 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-27 22:33:45.899  INFO 2478 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-27 22:33:45.905  INFO 2478 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:mydb'
+2023-03-27 22:33:45.970  INFO 2478 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-27 22:33:45.991  INFO 2478 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-03-27 22:33:46.068  INFO 2478 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-27 22:33:46.121  INFO 2478 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-27 22:33:46.401  INFO 2478 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-27 22:33:46.405  INFO 2478 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-27 22:33:46.737  WARN 2478 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2023-03-27 22:33:46.737  INFO 2478 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-03-27 22:33:46.740  WARN 2478 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2023-03-27 22:33:46.740  INFO 2478 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-03-27 22:33:46.771  WARN 2478 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-27 22:33:46.942  WARN 2478 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-03-27 22:33:46.977  INFO 2478 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-03-27 22:33:47.028  WARN 2478 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-03-27 22:33:47.039  INFO 2478 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-03-27 22:33:47.080  INFO 2478 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-03-27 22:33:47.082  INFO 2478 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-03-27 22:33:47.098  INFO 2478 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-03-27 22:33:47.098  INFO 2478 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-03-27 22:33:47.098  INFO 2478 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-03-27 22:33:47.098  INFO 2478 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-03-27 22:33:47.098  INFO 2478 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-03-27 22:33:47.098  INFO 2478 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-03-27 22:33:47.098  INFO 2478 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-03-27 22:33:47.257  INFO 2478 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-03-27 22:33:47.258  INFO 2478 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-03-27 22:33:47.259  INFO 2478 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-03-27 22:33:47.261  INFO 2478 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1679936627261 with initial instances count: 4
+2023-03-27 22:33:47.263  INFO 2478 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application HOTEL-BOOKING with eureka with status UP
+2023-03-27 22:33:47.263  INFO 2478 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1679936627263, current=UP, previous=STARTING]
+2023-03-27 22:33:47.264  INFO 2478 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-BOOKING/192.168.0.205:hotel-booking:8084: registering service...
+2023-03-27 22:33:47.280  INFO 2478 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+2023-03-27 22:33:47.280  INFO 2478 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8084
+2023-03-27 22:33:47.283  INFO 2478 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-BOOKING/192.168.0.205:hotel-booking:8084 - registration status: 204
+2023-03-27 22:33:47.290  INFO 2478 --- [scheduling-1] c.n.h.task.UpdateRoomStatusTask          : The time is now 22:33:47
+2023-03-27 22:33:47.292  INFO 2478 --- [restartedMain] c.n.h.HotelBookingApplication            : Started HotelBookingApplication in 2.911 seconds (JVM running for 3.215)
+2023-03-27 22:34:47.356  INFO 2478 --- [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-27 22:34:47.356  INFO 2478 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-27 22:34:47.358  INFO 2478 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-27 22:34:47.373  INFO 2478 --- [http-nio-8084-exec-1] c.n.h.controller.HotelRestController     : Working from port 8084 of hotel booking service
+2023-03-27 22:34:50.713  INFO 2478 --- [http-nio-8084-exec-2] c.n.h.controller.BookingRestController   : Working from port 8084 of hotel booking service
+2023-03-27 22:34:50.724  WARN 2478 --- [http-nio-8084-exec-2] c.n.h.controller.BookingRestController   : ==================================================
+2023-03-27 22:34:50.724  INFO 2478 --- [http-nio-8084-exec-2] c.n.h.controller.BookingRestController   : Booking reserved for user suraj. Kindly pay amount Rs.12000 within next 15 minutes else the booking will be cancelled.
+2023-03-27 22:34:50.724  WARN 2478 --- [http-nio-8084-exec-2] c.n.h.controller.BookingRestController   : ==================================================
+2023-03-27 22:34:54.089  INFO 2478 --- [hystrix-BookingRestController-1] c.n.h.controller.BookingRestController   : Working from port 8084 of hotel booking service
+2023-03-27 22:34:54.248  WARN 2478 --- [hystrix-BookingRestController-1] c.n.h.controller.BookingRestController   : ==================================================
+2023-03-27 22:34:54.248  INFO 2478 --- [hystrix-BookingRestController-1] c.n.h.controller.BookingRestController   : Payment Success for user suraj. Amount paid = Rs.12000
+2023-03-27 22:34:54.248  INFO 2478 --- [hystrix-BookingRestController-1] c.n.h.controller.BookingRestController   : Payment Status: OK. Payment Date: 27-March-2023 22:34:54
+2023-03-27 22:34:54.248  WARN 2478 --- [hystrix-BookingRestController-1] c.n.h.controller.BookingRestController   : ==================================================
+2023-03-27 22:34:54.250  WARN 2478 --- [hystrix-BookingRestController-1] c.n.h.controller.BookingRestController   : ==================================================
+2023-03-27 22:34:54.250  INFO 2478 --- [hystrix-BookingRestController-1] c.n.h.controller.BookingRestController   : Booking ID: 1f60546f-f2ce-4123-97d5-fa8bf4bf6755 Confirmed for user suraj. @mahagun
+2023-03-27 22:34:54.250  INFO 2478 --- [hystrix-BookingRestController-1] c.n.h.controller.BookingRestController   : Amount paid is Rs.12000
+2023-03-27 22:34:54.250  INFO 2478 --- [hystrix-BookingRestController-1] c.n.h.controller.BookingRestController   : Rooms alloted:
+
+2023-03-27 22:34:54.250  INFO 2478 --- [hystrix-BookingRestController-1] c.n.h.controller.BookingRestController   : ==> 1
+
+2023-03-27 22:34:54.250  INFO 2478 --- [hystrix-BookingRestController-1] c.n.h.controller.BookingRestController   : ==> 2
+
+2023-03-27 22:34:54.250  INFO 2478 --- [hystrix-BookingRestController-1] c.n.h.controller.BookingRestController   : ==> 3
+
+2023-03-27 22:34:54.250  WARN 2478 --- [hystrix-BookingRestController-1] c.n.h.controller.BookingRestController   : ==================================================
+2023-03-27 22:38:47.105  INFO 2478 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-03-27 22:38:47.293  INFO 2478 --- [scheduling-1] c.n.h.task.UpdateRoomStatusTask          : The time is now 22:38:47
+2023-03-27 22:43:47.095  INFO 2478 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-03-27 22:43:47.276  INFO 2478 --- [scheduling-1] c.n.h.task.UpdateRoomStatusTask          : The time is now 22:43:47
+2023-03-27 22:48:47.100  INFO 2478 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-03-27 22:48:47.269  INFO 2478 --- [scheduling-1] c.n.h.task.UpdateRoomStatusTask          : The time is now 22:48:47
+2023-03-27 22:53:28.134  INFO 2478 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application HOTEL-BOOKING with eureka with status DOWN
+2023-03-27 22:53:28.135  INFO 2478 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1679937808135, current=DOWN, previous=UP]
+2023-03-27 22:53:28.135  INFO 2478 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-BOOKING/192.168.0.205:hotel-booking:8084: registering service...
+2023-03-27 22:53:28.146  INFO 2478 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-BOOKING/192.168.0.205:hotel-booking:8084 - registration status: 204
+2023-03-27 22:53:28.164  INFO 2478 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-27 22:53:28.540  WARN 2478 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-03-27 22:53:28.540  INFO 2478 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-27 22:53:28.595  INFO 2478 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-27 22:53:28.596  INFO 2478 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-03-27 22:53:31.605  INFO 2478 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-03-27 22:53:31.616  INFO 2478 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-BOOKING/192.168.0.205:hotel-booking:8084 - deregister  status: 200
+2023-03-27 22:53:31.624  INFO 2478 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-03-27 23:05:08.767  INFO 2989 --- [restartedMain] c.n.h.HotelBookingApplication            : Starting HotelBookingApplication using Java 11.0.18 on SURAJs-MacBook-Air.local with PID 2989 (/Users/surajsachan/Desktop/Suraj_3175087_TravelPortal/hotel-booking/target/classes started by surajsachan in /Users/surajsachan/Desktop/Suraj_3175087_TravelPortal/hotel-booking)
+2023-03-27 23:05:08.768  INFO 2989 --- [restartedMain] c.n.h.HotelBookingApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-03-27 23:05:08.796  INFO 2989 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-27 23:05:08.796  INFO 2989 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-27 23:05:09.114  INFO 2989 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-27 23:05:09.198  INFO 2989 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 3 JPA repository interfaces.
+2023-03-27 23:05:09.315  INFO 2989 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=59f0f32e-efa1-36af-8392-a02c09557f7d
+2023-03-27 23:05:09.719  INFO 2989 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+2023-03-27 23:05:09.725  INFO 2989 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-27 23:05:09.726  INFO 2989 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-03-27 23:05:09.764  INFO 2989 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-27 23:05:09.765  INFO 2989 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 969 ms
+2023-03-27 23:05:09.783  INFO 2989 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-27 23:05:09.871  INFO 2989 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-27 23:05:09.876  INFO 2989 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:mydb'
+2023-03-27 23:05:09.949  INFO 2989 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-27 23:05:09.975  INFO 2989 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-03-27 23:05:10.049  INFO 2989 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-27 23:05:10.098  INFO 2989 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-27 23:05:10.385  INFO 2989 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-27 23:05:10.389  INFO 2989 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-27 23:05:10.807  WARN 2989 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2023-03-27 23:05:10.807  INFO 2989 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-03-27 23:05:10.809  WARN 2989 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2023-03-27 23:05:10.809  INFO 2989 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-03-27 23:05:10.839  WARN 2989 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-27 23:05:11.075  WARN 2989 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-03-27 23:05:11.112  INFO 2989 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-03-27 23:05:11.163  WARN 2989 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-03-27 23:05:11.174  INFO 2989 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-03-27 23:05:11.219  INFO 2989 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-03-27 23:05:11.221  INFO 2989 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-03-27 23:05:11.233  INFO 2989 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-03-27 23:05:11.233  INFO 2989 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-03-27 23:05:11.233  INFO 2989 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-03-27 23:05:11.233  INFO 2989 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-03-27 23:05:11.233  INFO 2989 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-03-27 23:05:11.233  INFO 2989 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-03-27 23:05:11.233  INFO 2989 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-03-27 23:05:11.498  INFO 2989 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-03-27 23:05:11.500  INFO 2989 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-03-27 23:05:11.501  INFO 2989 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-03-27 23:05:11.508  INFO 2989 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1679938511506 with initial instances count: 3
+2023-03-27 23:05:11.513  INFO 2989 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application HOTEL-BOOKING with eureka with status UP
+2023-03-27 23:05:11.513  INFO 2989 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1679938511513, current=UP, previous=STARTING]
+2023-03-27 23:05:11.515  INFO 2989 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-BOOKING/192.168.0.205:hotel-booking:8084: registering service...
+2023-03-27 23:05:11.533  INFO 2989 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+2023-03-27 23:05:11.534  INFO 2989 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8084
+2023-03-27 23:05:11.538  INFO 2989 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-BOOKING/192.168.0.205:hotel-booking:8084 - registration status: 204
+2023-03-27 23:05:11.544  INFO 2989 --- [scheduling-1] c.n.h.task.UpdateRoomStatusTask          : The time is now 23:05:11
+2023-03-27 23:05:11.547  INFO 2989 --- [restartedMain] c.n.h.HotelBookingApplication            : Started HotelBookingApplication in 3.247 seconds (JVM running for 3.62)
+2023-03-27 23:05:14.644  INFO 2989 --- [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-27 23:05:14.645  INFO 2989 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-27 23:05:14.653  INFO 2989 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2023-03-27 23:05:14.666  INFO 2989 --- [http-nio-8084-exec-1] c.n.h.controller.HotelRestController     : Working from port 8084 of hotel booking service
+2023-03-27 23:05:30.286  INFO 2989 --- [http-nio-8084-exec-3] c.n.h.controller.HotelRestController     : Working from port 8084 of hotel booking service
+2023-03-27 23:05:35.653  INFO 2989 --- [http-nio-8084-exec-4] c.n.h.controller.HotelRestController     : Working from port 8084 of hotel booking service
+2023-03-27 23:05:41.640  INFO 2989 --- [http-nio-8084-exec-5] c.n.h.controller.HotelRestController     : Working from port 8084 of hotel booking service
+2023-03-27 23:05:49.628  INFO 2989 --- [http-nio-8084-exec-6] c.n.h.controller.BookingRestController   : Working from port 8084 of hotel booking service
+2023-03-27 23:05:49.640  WARN 2989 --- [http-nio-8084-exec-6] c.n.h.controller.BookingRestController   : ==================================================
+2023-03-27 23:05:49.641  INFO 2989 --- [http-nio-8084-exec-6] c.n.h.controller.BookingRestController   : Booking reserved for user eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbXSwic3ViIjoic3VyYWpfc2FjaGFuIiwiaWF0IjoxNjc5NjM1Mjk3LCJleHAiOjE2Nzk2NjQwOTd9.K1K_wgLuE4u9II5hoXVlnQ10P_jlF4f1nblsEptu-iLkp6ggcdgo239xS1S5caB2nzRDV_V2LaXWIkNY56owzA. Kindly pay amount Rs.8000 within next 15 minutes else the booking will be cancelled.
+2023-03-27 23:05:49.641  WARN 2989 --- [http-nio-8084-exec-6] c.n.h.controller.BookingRestController   : ==================================================
+2023-03-27 23:05:55.004  INFO 2989 --- [hystrix-BookingRestController-1] c.n.h.controller.BookingRestController   : Working from port 8084 of hotel booking service
+2023-03-27 23:05:55.008  INFO 2989 --- [hystrix-BookingRestController-1] c.n.h.controller.BookingRestController   : Inside fallback method of confirm booking 
+2023-03-27 23:06:16.957  INFO 2989 --- [hystrix-BookingRestController-2] c.n.h.controller.BookingRestController   : Working from port 8084 of hotel booking service
+2023-03-27 23:06:16.962  INFO 2989 --- [hystrix-BookingRestController-2] c.n.h.controller.BookingRestController   : Inside fallback method of confirm booking 
+2023-03-27 23:06:29.227  INFO 2989 --- [hystrix-BookingRestController-3] c.n.h.controller.BookingRestController   : Working from port 8084 of hotel booking service
+2023-03-27 23:06:35.403  INFO 2989 --- [http-nio-8084-exec-10] c.n.h.controller.BookingRestController   : Working from port 8084 of hotel booking service
+2023-03-27 23:06:43.645  INFO 2989 --- [http-nio-8084-exec-2] c.n.h.controller.BookingRestController   : Working from port 8084 of hotel booking service
+2023-03-27 23:10:11.237  INFO 2989 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-03-27 23:10:11.545  INFO 2989 --- [scheduling-1] c.n.h.task.UpdateRoomStatusTask          : The time is now 23:10:11
+2023-03-27 23:12:51.621  INFO 2989 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application HOTEL-BOOKING with eureka with status DOWN
+2023-03-27 23:12:51.622  INFO 2989 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1679938971622, current=DOWN, previous=UP]
+2023-03-27 23:12:51.622  INFO 2989 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-BOOKING/192.168.0.205:hotel-booking:8084: registering service...
+2023-03-27 23:12:51.628  INFO 2989 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-BOOKING/192.168.0.205:hotel-booking:8084 - registration status: 204
+2023-03-27 23:12:51.674  INFO 2989 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-27 23:12:51.826 ERROR 2989 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Error thrown while acquiring connection from data source
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:188) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.checkSuspended(SessionLocal.java:1240) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.transitionToState(SessionLocal.java:1232) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.setCurrentCommand(SessionLocal.java:1210) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.startStatementWithinTransaction(SessionLocal.java:1658) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Command.executeQuery(Command.java:184) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:538) ~[h2-2.1.214.jar:2.1.214]
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:408) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712) ~[HikariCP-4.0.3.jar:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2023-03-27 23:12:52.028  WARN 2989 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-03-27 23:12:52.028  INFO 2989 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-27 23:12:52.082  INFO 2989 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-03-27 23:12:52.082  INFO 2989 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-03-27 23:12:55.093  INFO 2989 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-03-27 23:12:55.099  INFO 2989 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HOTEL-BOOKING/192.168.0.205:hotel-booking:8084 - deregister  status: 200
+2023-03-27 23:12:55.105  INFO 2989 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

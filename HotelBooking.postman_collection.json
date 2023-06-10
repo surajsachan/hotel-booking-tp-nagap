@@ -1,0 +1,324 @@
+{
+	"info": {
+		"_postman_id": "b89dfaf2-a322-44e9-9c6d-fadaea5cca3e",
+		"name": "HotelBooking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "search",
+			"item": [
+				{
+					"name": "Get All Hotels",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const hotels = pm.response.json();\r",
+									"const hotel = hotels[0];\r",
+									"const hotelID = hotel.hotelId;\r",
+									"const locationArray = hotel.locationDTO;\r",
+									"const location = locationArray[0];\r",
+									"const locationID = location.locationId;\r",
+									"pm.collectionVariables.set('hotelID', hotelID);\r",
+									"pm.collectionVariables.set('locationID', locationID);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8084/search/",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"search",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Hotel By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8084/search/id/{{hotelID}}",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"search",
+								"id",
+								"{{hotelID}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Hotel By Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8084/search/name/mahagun",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"search",
+								"name",
+								"mahagun"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Hotel By City",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8084/search/city/mumbai",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"search",
+								"city",
+								"mumbai"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "booking",
+			"item": [
+				{
+					"name": "Add Booking",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const bookingID = pm.response.json().bookingID; \r",
+									"pm.collectionVariables.set('bookingID', bookingID);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Authenticated-User",
+								"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbXSwic3ViIjoic3VyYWpfc2FjaGFuIiwiaWF0IjoxNjc5NjM1Mjk3LCJleHAiOjE2Nzk2NjQwOTd9.K1K_wgLuE4u9II5hoXVlnQ10P_jlF4f1nblsEptu-iLkp6ggcdgo239xS1S5caB2nzRDV_V2LaXWIkNY56owzA",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"locationId\": \"{{locationID}}\",\r\n    \"date\": \"03/28/2023\",\r\n    \"rooms\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8084/booking/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"booking",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Confirm Booking",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Authenticated-User",
+								"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbXSwic3ViIjoic3VyYWoiLCJpYXQiOjE2Nzk5MzYyNDMsImV4cCI6MTY3OTk2NTA0M30.oyBwBh3wlbRdA-E-9rF-G73uSUWzL6Fc_EcqNEPFfV3B7O6iotfoPYakwzLoJsB048xlhdizcYCsPuZhKdH3rQ",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"bookingId\": \"{{bookingID}}\",\r\n    \"paymentDetails\": {\r\n        \"cardNumber\": \"1234\",\r\n        \"cvv\": \"123\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8084/booking/confirm",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"booking",
+								"confirm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cancel Booking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"bookingId\":\"{{bookingID}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8084/booking/cancel",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"booking",
+								"cancel"
+							],
+							"query": [
+								{
+									"key": "bookingId",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Availability On given Date In Given City",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"city\": \"NEW DELHI\",\r\n    \"date\": \"03/28/2023\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8084/booking/getByCity",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"booking",
+								"getByCity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Booking By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8084/booking/id/{{bookingID}}",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"booking",
+								"id",
+								"{{bookingID}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "hotelID",
+			"value": "-",
+			"type": "default"
+		},
+		{
+			"key": "locationID",
+			"value": "-",
+			"type": "default"
+		},
+		{
+			"key": "bookingID",
+			"value": "-",
+			"type": "default"
+		},
+		{
+			"key": "csrfToken",
+			"value": "-",
+			"type": "default"
+		}
+	]
+}
